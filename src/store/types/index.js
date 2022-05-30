@@ -1,0 +1,17 @@
+export const SET_WALLET_CONNECTION_STATUS = 'SET_WALLET_CONNECTION_STATUS';
+
+export const SET_COINBASE_ADDRESS = 'SET_COINBASE_ADDRESS';
+
+export const SET_NFT_ID = 'SET_NFT_ID';
+
+export const SET_TIMER = 'SET_TIMER';
+
+export const SET_NET_STATUS = 'SET_NET_STATUS';
+
+export const SET_REWARD = 'SET_REWARD';
+
+export const SET_STAKE_DATA = 'SET_STAKE_DATA';
+
+export const SET_UNSTAKE_DATA = 'SET_UNSTAKE_DATA';
+
+export const SET_STAKE_STATUS = 'SET_STAKE_STATUS';

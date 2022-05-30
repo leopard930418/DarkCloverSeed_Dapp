@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Azonix;
+  src: url("../src/static/fonts/Azonix.otf") format("opentype");
+}
+a {
+  text-decoration: none;
+}
+.maven {
+  font-family: "Maven Pro", sans-serif;
+}
+.azonix {
+  font-family: Azonix;
+}
+
+body {
+  font-family: "Maven Pro", sans-serif;
+  background-color: #0d1f19;
+  display:block;
+  height: 300px;
+}
+
+.App {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("../src/static/images/Fond\ Header\ DAPP\ DARK\ CS\ 2022.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.box-card {
+    padding: 16px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    /* min-width: 320px; */
+}
+.card-img {
+  width: 112px;
+  height: 318px;
+  margin: auto;
+  padding: 70px 0 110px 0;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-imgs {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-imgs img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.card-content {
+  padding-bottom: 20px;
+}
+
+@media (max-width:900px){
+  .App {
+    background-size: auto;
+  }
+}
+
+.route-content {
+  min-height: 100%;
+  text-align: center;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  flex: 1;
+  margin-bottom: -20px;
+}
+
+  
+@media (max-width:450px){
+  .route-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+
+.tab-buttons {
+  margin-bottom: 50px;
+}
+
+button {
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #707176;
+  transition: all ease-in-out 0.2s;
+  /* border-bottom: 2px solid transparent; */
+  font-weight: 700;
+}
+.activestaked {
+  color: red;
+  border: 0px;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(
+    90deg,
+    rgb(233, 196, 196) 10%,
+    rgb(255, 0, 0) 100%
+  );
+  border-image-slice: 1;
+  color: red;
+  margin: auto;
+  text-decoration: none;
+}
+
+.activeunstaked {
+  color: red;
+  border: 0px;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(
+    90deg,
+    rgb(233, 196, 196) 10%,
+    rgb(255, 0, 0) 100%
+  );
+  border-image-slice: 1;
+  color: red;
+  margin: auto;
+  text-decoration: none;
+}
+
+.input-number {
+  border-radius: 4px;
+  text-align: center;
+  max-width: 60px;
+  min-height: 50px;
+  border: 2px solid #c1d117;
+  box-shadow: 0px 0px 18px ;
+}
+.gradienttext {
+  background: -webkit-linear-gradient(0deg, #ff0101, #b12e2e, #645151);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.collapse {
+  max-height: 0px;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+.open {
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+.question-open {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: "center";
+  text-transform: "normal";
+  color: white;
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(90deg, red, rgb(87, 74, 74));
+}
+.question-open-roadmap {
+  background-color: #850c0c;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 26px;
+  text-align: "center";
+  text-transform: "normal";
+  color: #b9e7d6;
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.question-close {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: "center";
+  text-transform: "normal";
+  color: white;
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(90deg, red, rgb(87, 74, 74));
+}
+
+.question-close-roadmap {
+  background-color: #850c0c;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 26px;
+  text-align: "center";
+  text-transform: "normal";
+  color: #b9e7d6;
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.faq-answer {
+  color: #87b79d;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: "center";
+  text-transform: "normal";
+  color: #b9e7d6;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px 40px 40px;
+}
+
+.faq-q-wrap {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.faq-q-big-wrap {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.faq-icons {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+.FAQ-ICON {
+  color: red;
+  font-size: 20px;
+}
+.check-content {
+  display: flex;
+  align-self: center;
+  padding-left: 120px;
+}
+
+/* Roadmap */
+@media screen and (max-width: 580px) {
+  .roadmap .MuiTimelineItem-root:before {
+    padding: 0;
+    flex: 0;
+  }
+}
+
+.roadmap-title {
+  color: red;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  display: block;
+}
+
+.phase-content {
+  position: absolute;
+  left: -267px;
+  color: #b9e7d6;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+
+@media screen and (max-width: 950px) {
+  .route-content {
+    width: 100%;
+    position: relative;
+    margin-top: 0px;
+  }
+}
+
+.box::before {
+  border-radius: inherit;
+  background: linear-gradient(to right, red, orange);
+}
+
+.box {
+  font-family: Maven Pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  color: #ff0000;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+  margin: 2px 0;
+  position: relative;
+  z-index: 0;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  padding: 2px;
+  border-radius: 8px;
+  background: linear-gradient(to right, #d88787, #ff0000);
+  -webkit-mask: 
+     linear-gradient(rgb(0, 0, 0) 0 0) content-box, 
+     linear-gradient(rgb(0, 0, 0) 0 0);
+          mask: 
+     linear-gradient(rgb(0, 0, 0) 0 0) content-box, 
+     linear-gradient(rgb(0, 0, 0) 0 0);
+     border-radius: 10px;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
